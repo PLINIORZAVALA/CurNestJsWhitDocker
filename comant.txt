@@ -36,5 +36,7 @@ Tutorial: https://youtu.be/gsEqU_OFx8Y?si=E-mOdXi8xuqSlBw_
 27 Servicios -> Separa la lógica del negocio
     Comando para la Creación. nest g s nameService
 
+28 Errores amigables
+    
 
  
