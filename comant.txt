@@ -37,6 +37,7 @@ Tutorial: https://youtu.be/gsEqU_OFx8Y?si=E-mOdXi8xuqSlBw_
     Comando para la Creación. nest g s nameService
 
 28 Errores amigables
-    
 
- 
+
+29 Implementación de módulos
+   comando para la creacion: nest g mo modules/tuits
