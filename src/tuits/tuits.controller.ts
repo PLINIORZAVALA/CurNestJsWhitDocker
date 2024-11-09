@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Param, Post } from '@nestjs/common';
+import { Body, Controller, Get, HttpCode, HttpStatus, Param, Post } from '@nestjs/common';
 
 @Controller('tuits')
 export class TuitsController {//resive peticiones http:...
@@ -13,6 +13,7 @@ export class TuitsController {//resive peticiones http:...
     }
 
     @Post()
+    @HttpCode(HttpStatus.NO_CONTENT)
     createTuit(@Body('message')  message: string){
         return `Your tuit was ${message}`;
     }
