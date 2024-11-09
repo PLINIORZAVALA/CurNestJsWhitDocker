@@ -10,4 +10,6 @@
  - Parámetros
 
 22 
- - 
+ - Configuracion de Postman or Oter
+    http://localhost:3000/tuits
+23 
