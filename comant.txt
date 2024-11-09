@@ -1,3 +1,4 @@
+Tutorial: https://youtu.be/gsEqU_OFx8Y?si=E-mOdXi8xuqSlBw_
 19
  - Creación de proyecto
     nest new name-api
@@ -31,5 +32,9 @@
 
 26 Parámetros de tipo Query
     http://localhost:3000/tuits/id
-27 
+
+27 Servicios -> Separa la lógica del negocio
+    Comando para la Creación. nest g s nameService
+
+
  

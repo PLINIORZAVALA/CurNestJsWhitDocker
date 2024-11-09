@@ -1,31 +1,35 @@
 import { Body, Controller, Delete, Get, HttpCode, HttpStatus, Param, Patch, Post, Query } from '@nestjs/common';
+import { TuitsService } from './tuits.service';
+import { Tuit } from './tuit.entity';
 
 @Controller('tuits')
-export class TuitsController {//resive peticiones http:...
-    @Get()
-    getTuits(): string {
-        return 'Hello from Tuitter';
-    }
+export class TuitsController {
+  constructor(private readonly tuitsService: TuitsService) {}
 
-    @Get(':id') //tuit1
-    getTuit(@Query() filterQuery): string{//Decorador que se obtiene desde el cliente
-        const { searchTerm, orderBy } = filterQuery;
-        return `All ${searchTerm} tuits ordered by ${orderBy}`;
-    }
+  @Get()
+  getTuits(@Query() filterQuery): Tuit[] {
+    const { rearchTerm, orderBy } = filterQuery;
 
-    @Post()
-    @HttpCode(HttpStatus.NO_CONTENT)
-    createTuit(@Body('message')  message: string){
-        return `Your tuit was ${message}`;
-    }
+    return this.tuitsService.getTuits();
+  }
 
-    @Patch(':id')
-    updateTuit(@Param('id') id: string, @Body() tuit): string {
-        return `The tuit ${id} has been update`;
-    }
+  @Get(':id') // Ruta para obtener un tuit específico
+  getTuit(@Param('id') id: string): Tuit { // Añadido el parámetro id en @Param
+    return this.tuitsService.getTuit(id);
+  }
 
-    @Delete(':id')
-    deleteTuit(@Param('id') id: string): string {
-        return `The tuit ${id} has been delete`;
-    }
+  @Post()
+  createTuit(@Body('message') message: string){
+    return this.tuitsService.createTuit(message);
+  }
+
+  @Patch(':id')
+  updateTuit(@Param('id') id: string, @Body('message') tuit): Tuit {
+    return this.tuitsService.updateTuit(id, tuit);
+  }
+
+  @Delete(':id')
+  removeTuit(@Param('id') id: string) {
+    return this.tuitsService.removeTuit(id);
+  }
 }
