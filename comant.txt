@@ -21,4 +21,11 @@
             "message": "Hello world"
         }
 24 Códigos de estado http
+
+25 Acciones de mantenimiento
+    C R E A T E | [GET]
+    R E A D     | [POST]
+    U P D A T E | [PATCH]
+    D E L E T E | [DELETE]
+    http://localhost:3000/tuits/1
  
