@@ -1,8 +1,13 @@
 19
-- Creación de proyecto
+ - Creación de proyecto
     nest new name-api
-- Transferencia de aplicación (file "dist")
+ - Transferencia de aplicación (file "dist")
     nest start --watch
 20
-- Creación de un controlador
+ - Creación de un controlador
     nes g co name-controller
+21 
+ - Parámetros
+
+22 
+ - 
