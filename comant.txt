@@ -13,3 +13,10 @@
  - Configuracion de Postman or Oter
     http://localhost:3000/tuits
 23 
+ - Cuerpo de una petición http
+  Postman:
+    POST http://localhost:3000/tuits 
+      Body -> JSON
+        {
+            "message": "Hello world"
+        }
