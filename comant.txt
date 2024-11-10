@@ -67,3 +67,6 @@ Tutorial: https://youtu.be/gsEqU_OFx8Y?si=E-mOdXi8xuqSlBw_
     netstat -ano | findstr :5432
     docker-compose up -d 
     docker restart
+
+37 Configurando gestor de base de datos (pgAdmin)
+    
