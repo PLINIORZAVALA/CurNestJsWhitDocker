@@ -63,4 +63,7 @@ Tutorial: https://youtu.be/gsEqU_OFx8Y?si=E-mOdXi8xuqSlBw_
     docker ps
     run -d  -p 8082:80 nginx
 
-36 
+36 Preparativos base de datos
+    netstat -ano | findstr :5432
+    docker-compose up -d 
+    docker restart
