@@ -52,3 +52,7 @@ Tutorial: https://youtu.be/gsEqU_OFx8Y?si=E-mOdXi8xuqSlBw_
 
 
 32 Evitando data maliciosa(...Validando)
+
+33 Conclusion de la primera uparte de como crear las peticiones y funcionamiento
+
+34 Introducción sección IV(Creación con base de datos relacional Posgres, Docker)
