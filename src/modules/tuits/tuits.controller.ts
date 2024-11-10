@@ -15,7 +15,7 @@ export class TuitsController {
   }
 
   @Get(':id') // Ruta para obtener un tuit específico
-  getTuit(@Param('id') id: string): Tuit { // Añadido el parámetro id en @Param
+  getTuit(@Param('id') id: string): Tuit { 
     return this.tuitsService.getTuit(id);
   }
 

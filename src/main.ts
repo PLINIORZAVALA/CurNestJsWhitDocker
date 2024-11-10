@@ -8,6 +8,8 @@ async function bootstrap() {
   app.useGlobalPipes(
     new ValidationPipe({
       transform: true,
+      whitelist: true,
+      forbidNonWhitelisted: true,//Cualquier propidad adicional sera reportada como error 400
     }),
   );
   
