@@ -41,3 +41,13 @@ Tutorial: https://youtu.be/gsEqU_OFx8Y?si=E-mOdXi8xuqSlBw_
 
 29 Implementación de módulos
    comando para la creacion: nest g mo modules/tuits
+
+30 Transformación de data a DTOs
+    D R E A T E 
+    T R A N S F E R
+    O B J E C T 
+    comando para la creación: nest g cl module/tuits/dto/create-tuit.dto.ts
+    npm install class-validator
+    npm install class-transformer
+
+   
